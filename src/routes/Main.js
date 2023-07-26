@@ -1,8 +1,15 @@
 import React from 'react'
+import { Router, Route, Switch } from "react-router-dom";
+import { history } from '../_helpers/utilities'
+import Home from '../_components/Home/Home';
 
 const Main = () => {
   return (
-    <div>Main</div>
+    <Router history={history}>
+      <Switch>
+        <Route exact path="/dashboard" component={Home} />
+      </Switch>
+    </Router>
   )
 }
 
