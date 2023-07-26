@@ -4,7 +4,7 @@ import { history } from '../_helpers/utilities'
 import Home from '../_components/Home/Home';
 
 const Main = () => {
-  console.log('xys');
+  console.log('xysfwe');
   return (
     <Router history={history}>
       <Switch>
