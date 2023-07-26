@@ -1,12 +1,12 @@
 import { Router, Route, Switch } from "react-router-dom";
 import ErrorBoundary from './ErrorBoundary'
-import { createBrowserHistory } from 'history';
 import Front from "./routes/Front";
-import PrivateRoute from "./PrivateRoute";
+import PrivateRoute from "./routes/PrivateRoute";
 import Main from "./routes/Main";
+import { history } from "./_helpers/utilities";
 
 function App() {
-  const history = createBrowserHistory();
+
   return (
     <Router history={history}>
       <ErrorBoundary>

@@ -1,3 +1,5 @@
+import { createBrowserHistory } from 'history';
+
 export const isAuthorized = (userRole, authorizedRoles) => {
   return generateRoles(userRole).some((role) => authorizedRoles.includes(role));
 };
@@ -15,3 +17,5 @@ export const generateRoles = (userRoles) => {
     .filter(([key, value]) => userRoles.includes(value))
     .map(([key, value]) => key);
 };
+
+export const history = createBrowserHistory();
